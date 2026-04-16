@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Epistemic Targeting"
+  short_description: "Filter scenes by reader insight"
+  default_prompt: "Use $narrative-epistemic-targeting to define the reader insight for this passage and cut lore that does not serve it."

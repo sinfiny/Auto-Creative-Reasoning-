@@ -24,6 +24,9 @@ Before substantial prose work:
 - Load `references/craft-map.md` for the condensed operating model.
 - Load `references/output-contracts.md` when the user needs a structured scene, chapter, twist, edit, or contradiction loop.
 - Load `references/source-index.md` when the user asks where the principles came from.
+- Use `$narrative-contextual-prose-density` when the scene needs a deliberate depiction/explanation detail budget.
+- Use `$narrative-subtext-mapping` when dialogue or interaction depends on hidden knowledge, agenda, or emotional state.
+- Use `$narrative-epistemic-targeting` when lore, backstory, reveals, or reader discovery must be filtered by a single reader insight.
 
 ## Operating Loop
 
@@ -72,6 +75,27 @@ Rules:
 - Do not pad to hit a requested length if the beat is complete.
 - Prefer concrete action, sensory pressure, dialogue, and choice over explanation.
 - Compress worldbuilding into consequence-bearing details.
+
+## Cognitive Tool Layer
+
+When the task involves autonomous scene generation, add these controls before drafting:
+
+```xml
+<cognitive_tool_layer>
+Scene_Mode: depiction | explanation | hybrid
+Epistemic_Goal:
+Active_Unseen_State:
+Detail_Budget:
+Withheld_Info:
+</cognitive_tool_layer>
+```
+
+Rules:
+
+- `Scene_Mode` controls prose density: depiction for recognition and atmosphere, explanation for causal mechanics.
+- `Epistemic_Goal` controls what the reader should learn or infer now.
+- `Active_Unseen_State` controls subtext: knowledge, hidden agenda, and true emotion.
+- `Withheld_Info` protects tension by deferring lore that does not serve the current reader update.
 
 ## Surgical Editing
 
