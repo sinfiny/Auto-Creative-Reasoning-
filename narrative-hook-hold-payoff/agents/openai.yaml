@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Hook Hold Payoff"
+  short_description: "Plan scenes with hook, escalation, and payoff"
+  default_prompt: "Use $narrative-hook-hold-payoff to turn this chapter idea into a hook, escalation, and payoff."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Auto Reasoning"
+  short_description: "Draft fiction with strict story reasoning loops"
+  default_prompt: "Use $narrative-auto-reasoning to plan and draft a scene with explicit character motives, lore constraints, and hook/hold/payoff checks."

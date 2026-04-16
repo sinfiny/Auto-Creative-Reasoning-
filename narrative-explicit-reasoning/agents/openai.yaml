@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Explicit Reasoning"
+  short_description: "Surface motives, assumptions, and lore constraints"
+  default_prompt: "Use $narrative-explicit-reasoning to check this scene's character motivation and lore assumptions before drafting."

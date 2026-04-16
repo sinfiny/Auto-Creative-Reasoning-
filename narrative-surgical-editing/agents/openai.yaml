@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Surgical Editing"
+  short_description: "Revise only the requested fiction component"
+  default_prompt: "Use $narrative-surgical-editing to revise only the target beat and preserve the surrounding prose."

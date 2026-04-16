@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Minimum Viable Prose"
+  short_description: "Cut lore dumps and draft only what the beat needs"
+  default_prompt: "Use $narrative-minimum-viable-prose to compress this scene without losing the emotional turn."
