@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grainbound Causal Worldbuilding"
+  short_description: "Build cultures from pressure, not vibes"
+  default_prompt: "Use $grainbound-causal-worldbuilding to turn this culture idea into a bottom-up causal system with environmental pressures, WOAC loops, and a six-layer cultural stack."
