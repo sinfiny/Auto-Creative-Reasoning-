@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prose Clarity Cadence"
+  short_description: "Edit prose for clarity, rhythm, and skim value"
+  default_prompt: "Use $prose-clarity-cadence to rewrite this draft for clarity, cadence, specificity, and screen readability."
