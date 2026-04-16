@@ -1,0 +1,4 @@
+interface:
+  display_name: "Character Driven Storytelling"
+  short_description: "Build stories from motive, pressure, and change"
+  default_prompt: "Use $character-driven-storytelling to strengthen this story's character motivation, pressure, and transformation."

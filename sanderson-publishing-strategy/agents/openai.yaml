@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Publishing Strategy"
+  short_description: "Choose a path, research agents, and manage business tradeoffs"
+  default_prompt: "Use $sanderson-publishing-strategy to help me decide between traditional, indie, or hybrid publishing and what to do next."

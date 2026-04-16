@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Full Methodology"
+  short_description: "Run the full Sanderson writing system or route to the right component skill"
+  default_prompt: "Use $sanderson-full-methodology to apply the full Brandon Sanderson writing method to my project or to route me to the right sub-skill."

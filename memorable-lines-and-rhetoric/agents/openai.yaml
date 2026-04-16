@@ -1,0 +1,4 @@
+interface:
+  display_name: "Memorable Lines And Rhetoric"
+  short_description: "Strengthen quotability, rhythm, and emphasis"
+  default_prompt: "Use $memorable-lines-and-rhetoric to make this passage more memorable with stronger rhythm, contrast, and rhetorical force."

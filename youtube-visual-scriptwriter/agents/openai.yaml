@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Visual Scriptwriter"
+  short_description: "Build scripts around visuals, surprise, and retention"
+  default_prompt: "Use $youtube-visual-scriptwriter to turn this idea into a stronger YouTube script with a clear visual spine, retention beats, and payoff."

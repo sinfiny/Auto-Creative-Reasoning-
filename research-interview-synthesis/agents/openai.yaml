@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Interview Synthesis"
+  short_description: "Plan interviews and synthesize reporting"
+  default_prompt: "Use $research-interview-synthesis to help me plan interviews, organize reporting, and synthesize research into a stronger nonfiction piece."

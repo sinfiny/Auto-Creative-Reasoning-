@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Endings And Revision"
+  short_description: "Land the payoff and plan revision passes"
+  default_prompt: "Use $sanderson-endings-and-revision to fix my ending, plan my revision passes, or interpret reader feedback."

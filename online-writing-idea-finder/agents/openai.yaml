@@ -1,0 +1,4 @@
+interface:
+  display_name: "Online Writing Idea Finder"
+  short_description: "Turn notes and curiosities into publishable angles"
+  default_prompt: "Use $online-writing-idea-finder to help me find stronger ideas and angles from my notes, obsessions, and unanswered questions."

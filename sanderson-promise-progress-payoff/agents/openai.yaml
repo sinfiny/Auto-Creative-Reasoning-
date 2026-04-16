@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Promise Progress Payoff"
+  short_description: "Diagnose promises, momentum, and payoff"
+  default_prompt: "Use $sanderson-promise-progress-payoff to audit my opening, middle, ending, or story promises."

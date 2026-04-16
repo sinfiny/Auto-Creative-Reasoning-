@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clarity And Visuality Editor"
+  short_description: "Make abstract prose concrete and readable"
+  default_prompt: "Use $clarity-and-visuality-editor to rewrite this passage for clarity, context, and visual legibility."
