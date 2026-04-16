@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Contextual Prose Density"
+  short_description: "Tune prose detail to scene function"
+  default_prompt: "Use $narrative-contextual-prose-density to decide whether this scene needs depiction or explanation density before drafting."

@@ -31,6 +31,7 @@ The component skills carry their own compact transcript-derived notes:
 | Alain de Botton interview | How to Write Something Truly Beautiful | https://www.youtube.com/watch?v=LInND2d6dtA | Emotional honesty, observation, beauty, avoiding generic AI prose |
 | Steven Pressfield interview | 21 Proven Methods for Writing Great Stories | https://www.youtube.com/watch?v=KU5FUqbqMK0 | Structure, scene function, precise story components |
 | Steven Pressfield interview | How to Write Absurdly Good Stories | https://www.youtube.com/watch?v=F9DtH-tVQUI | Hook/hold/payoff, rough drafting, editing discipline |
+| Judy Fan colloquium | Cognitive Tools for Making the Invisible Visible | https://www.youtube.com/watch?v=AF3XJT9YKpM | Goal-sensitive abstraction, depiction vs. mechanism, subtext as hidden state, reader epistemic goals |
 
 ## Notes
 
@@ -46,7 +47,8 @@ yt-dlp --skip-download --write-subs --write-auto-subs --sub-langs 'en.*' --sub-f
   'https://www.youtube.com/watch?v=o84GXnrHdgg' \
   'https://www.youtube.com/watch?v=LInND2d6dtA' \
   'https://www.youtube.com/watch?v=KU5FUqbqMK0' \
-  'https://www.youtube.com/watch?v=F9DtH-tVQUI'
+  'https://www.youtube.com/watch?v=F9DtH-tVQUI' \
+  'https://www.youtube.com/watch?v=AF3XJT9YKpM'
 ```
 
 ## Condensed Source Notes
@@ -105,3 +107,21 @@ Agent implication:
 
 - Define Hook, Hold, and Payoff before drafting.
 - Self-check after drafting; revise before presenting if the target was missed.
+
+### Judy Fan Colloquium
+
+Operational use:
+
+- Treat prose as a cognitive tool that highlights what is relevant to notice.
+- Choose depiction when the reader needs identity, atmosphere, or recognition.
+- Choose explanation when the reader needs causal mechanism, action, or plot logic.
+- Make invisible state explicit during planning: knowledge, agenda, emotion, reader belief.
+- Define the reader's epistemic goal before adding lore or backstory.
+- Filter detail by the viewer/reader question, not by what the author or context window knows.
+
+Agent implication:
+
+- Add a cognitive tool layer to autonomous scene generation.
+- Allocate token budget by scene mode.
+- Keep subtext in hidden planning variables and surface it indirectly.
+- Introduce only the story information needed to update the reader's current mental model.

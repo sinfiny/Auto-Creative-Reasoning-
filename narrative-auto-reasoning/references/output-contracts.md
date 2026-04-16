@@ -11,6 +11,9 @@ POV:
 Emotional goal:
 Outward goal:
 Known constraints:
+Scene mode:
+Epistemic goal:
+Hidden state:
 Hook:
 Hold:
 Payoff:
@@ -119,3 +122,23 @@ Next draft move:
 ```
 
 Use this when the user asks what is wrong with a scene, chapter, outline, or premise.
+
+## Cognitive Tool Contract
+
+Use this when an autonomous writing loop must decide what to focus on before drafting.
+
+```xml
+<cognitive_tool_layer>
+Scene_Mode: depiction | explanation | hybrid
+Reader_Current_Model:
+Epistemic_Goal:
+Target_Update:
+Active_Characters:
+Hidden_State_Map:
+Detail_Budget:
+Withheld_Info:
+Misread_Risk:
+</cognitive_tool_layer>
+```
+
+This contract can be combined with the New Scene Contract, but keep it concise. It exists to route attention, not to create a second outline.
