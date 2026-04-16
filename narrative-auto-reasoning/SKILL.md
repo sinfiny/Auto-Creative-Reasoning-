@@ -1,42 +1,58 @@
 ---
 name: narrative-auto-reasoning
-description: Use when planning, drafting, revising, or diagnosing fiction with strict narrative reasoning loops, especially novels, chapters, scenes, lore-heavy stories, character motivation checks, hook/hold/payoff structure, surgical edits, and AI writing IDE workflows. Based on David Perell's writing interviews with Morgan Housel, Alain de Botton, and Steven Pressfield; intended as an editor and reasoning protocol, not a style imitation skill.
+description: Use as a workflow skill when a fiction task needs multiple narrative control loops combined: explicit reasoning, minimum viable prose, surgical editing, and hook/hold/payoff verification. Coordinates the narrative-explicit-reasoning, narrative-minimum-viable-prose, narrative-surgical-editing, and narrative-hook-hold-payoff skills for AI writing IDE or autonomous agent workflows.
 ---
 
 # Narrative Auto Reasoning
 
-Use this skill to keep fiction work deliberate: clarify motivation before motion, use only the lore the scene needs, edit within the requested radius, and verify hook/hold/payoff before handing prose back.
+Use this workflow skill to coordinate the four narrative control skills:
+
+- `$narrative-explicit-reasoning` for assumptions, motivation, lore constraints, contradictions, and twist tradeoffs.
+- `$narrative-minimum-viable-prose` for concise drafting, compression, concrete observation, and avoiding lore dumps.
+- `$narrative-surgical-editing` for targeted edits with a constrained edit radius.
+- `$narrative-hook-hold-payoff` for scene/chapter momentum, escalation, structure, and payoff verification.
 
 ## Quick Start
 
-Use this skill for:
+Use this workflow when the task spans more than one control loop, such as:
 
-- Scene and chapter planning
-- Prose drafting
-- Character motivation checks
-- Lore consistency checks
-- Plot twist tradeoff analysis
-- Surgical revision of existing prose
-- AI writing IDE or autonomous writing-agent loops
+- Planning and drafting a new scene
+- Revising a scene while preserving lore and structure
+- Diagnosing why a chapter drifts
+- Designing a plot twist and then drafting the beat
+- Compressing prose without losing Hook/Hold/Payoff
+- Running an autonomous AI writing IDE loop
 
 Before substantial prose work:
 
-- Load `references/craft-map.md` for the condensed operating model.
+- Load `references/craft-map.md` for the combined operating model.
 - Load `references/output-contracts.md` when the user needs a structured scene, chapter, twist, edit, or contradiction loop.
-- Load `references/source-index.md` when the user asks where the principles came from.
+- Load `references/source-index.md` when the user asks where the source grounding came from.
 
 ## Operating Loop
 
 Strict mode is the default unless the user explicitly opts out.
 
-1. Identify the task type: plan, draft, revise, diagnose, continue, compress, or rewrite.
-2. Extract existing constraints: characters, lore, genre, POV, timeline, tone, prior events, and forbidden changes.
-3. Produce a concise `<reasoning>` block before prose. This is an editorial rationale, not hidden chain-of-thought.
-4. Define success criteria using Hook, Hold, and Payoff.
-5. Draft only what is needed to satisfy the scene or edit.
-6. Run a `<self_check>` pass against the original success criteria.
-7. If the self-check fails, revise the sequence before presenting it as final.
+1. Route the task to the needed component skills.
+2. Run `$narrative-explicit-reasoning` first when motivation, lore, assumptions, contradiction, or twist logic matters.
+3. Run `$narrative-hook-hold-payoff` before scene or chapter drafting to define success criteria.
+4. Run `$narrative-minimum-viable-prose` for the drafting or compression pass.
+5. Run `$narrative-surgical-editing` when modifying existing prose.
+6. Run a final `<self_check>` against the original criteria.
+7. If the self-check fails, revise before presenting the result.
 8. Stop and ask one precise clarification question if the emotional beat or lore state contradicts known context.
+
+## Routing Table
+
+| User task | Use first | Then use |
+|---|---|---|
+| "Plan this scene" | `$narrative-explicit-reasoning` | `$narrative-hook-hold-payoff` |
+| "Draft this scene" | `$narrative-explicit-reasoning` | `$narrative-hook-hold-payoff`, `$narrative-minimum-viable-prose` |
+| "Make this shorter" | `$narrative-minimum-viable-prose` | `$narrative-surgical-editing` if editing existing text |
+| "Change this line/beat only" | `$narrative-surgical-editing` | `$narrative-explicit-reasoning` if continuity risk appears |
+| "Add a twist" | `$narrative-explicit-reasoning` | `$narrative-hook-hold-payoff` |
+| "Fix a drifting chapter" | `$narrative-hook-hold-payoff` | `$narrative-minimum-viable-prose` |
+| "Continue from here" | `$narrative-explicit-reasoning` | `$narrative-hook-hold-payoff`, `$narrative-minimum-viable-prose` |
 
 ## Required Reasoning Block
 
@@ -66,21 +82,24 @@ Rules:
 
 ## Minimum Viable Prose
 
-- Use only the lore needed for the immediate scene.
-- Do not invent new factions, systems, artifacts, mechanics, relationships, or backstory unless asked.
-- Avoid philosophical exposition unless it belongs to the POV character.
-- Do not pad to hit a requested length if the beat is complete.
-- Prefer concrete action, sensory pressure, dialogue, and choice over explanation.
-- Compress worldbuilding into consequence-bearing details.
+For drafting and compression, defer to `$narrative-minimum-viable-prose`.
+
+Default workflow rule:
+
+- Draft only the prose needed for the immediate beat.
+- Add no speculative lore.
+- Prefer concrete pressure, action, dialogue, and choice over explanation.
+- Stop when the emotional turn has landed.
 
 ## Surgical Editing
 
-- Touch only the requested component.
-- If asked to alter dialogue, preserve surrounding action unless the action creates a contradiction.
-- If asked to alter internal monologue, do not rewrite adjacent environmental prose.
-- If asked to remove a subplot, remove dangling references while preserving the primary narrative spine.
-- Preserve genre framework, progression mechanics, fanfiction-to-original transition rules, and established tropes unless explicitly asked to change them.
-- Return a short change note explaining exactly what changed.
+For targeted revision, defer to `$narrative-surgical-editing`.
+
+Default workflow rule:
+
+- Define the edit radius before changing text.
+- Preserve surrounding prose unless it creates contradiction.
+- Report exactly what changed.
 
 ## Hook, Hold, Payoff
 
@@ -182,7 +201,7 @@ Why it is shorter:
 ## Guardrails
 
 - Do not imitate David Perell, Morgan Housel, Alain de Botton, Steven Pressfield, or any living author's prose voice.
-- Use the source material as craft guidance only.
+- Use the source material and component skills as craft guidance only.
 - Do not quote long transcript passages.
 - Do not overwrite the user's story intent.
 - Preserve productive ambiguity; fix confusion, not mystery.

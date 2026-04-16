@@ -2,6 +2,27 @@
 
 Use these sources as craft references only. Do not imitate the speakers' prose, rhetorical style, or persona.
 
+## Transcript Pass
+
+English captions were fetched with `yt-dlp`, cleaned in `/tmp`, and used to derive the component skill notes. Full transcripts are intentionally not bundled.
+
+Cleaned transcript word counts from the implementation pass:
+
+| Video ID | Words |
+|---|---:|
+| `o84GXnrHdgg` | 27,537 |
+| `LInND2d6dtA` | 16,571 |
+| `KU5FUqbqMK0` | 12,155 |
+| `F9DtH-tVQUI` | 15,352 |
+| Total | 71,615 |
+
+The component skills carry their own compact transcript-derived notes:
+
+- `$narrative-explicit-reasoning`: assumptions, point, reader attention, reader empathy.
+- `$narrative-minimum-viable-prose`: concrete emotion, attention, anti-generic prose, compression.
+- `$narrative-surgical-editing`: edit radius, reader point of view, component preservation.
+- `$narrative-hook-hold-payoff`: inciting incident, midpoint, all-is-lost, epiphany, stakes, scene cards.
+
 ## Sources
 
 | Source | Video | URL | Used For |
