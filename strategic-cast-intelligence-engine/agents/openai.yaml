@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strategic Cast Intelligence Engine"
+  short_description: "Stress-test schemes, countermoves, and leverage"
+  default_prompt: "Use $strategic-cast-intelligence-engine to make my protagonist, antagonists, and factions act intelligently under pressure."

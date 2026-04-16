@@ -1,0 +1,4 @@
+interface:
+  display_name: "Faction Power Consequence Engine"
+  short_description: "Design strategic power systems and factions"
+  default_prompt: "Use $faction-power-consequence-engine to build my advancement system, faction incentives, resource economy, and long-term consequences."

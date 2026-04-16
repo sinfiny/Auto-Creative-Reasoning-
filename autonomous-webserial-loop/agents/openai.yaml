@@ -1,0 +1,4 @@
+interface:
+  display_name: "Autonomous Webserial Loop"
+  short_description: "Plan, draft, judge, and revise until it clears the bar"
+  default_prompt: "Use $autonomous-webserial-loop to keep iterating on my mystery webserial chapter until the structure, intelligence, consequence, and payoff are strong enough."

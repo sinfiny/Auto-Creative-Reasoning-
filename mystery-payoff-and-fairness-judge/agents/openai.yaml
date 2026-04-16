@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mystery Payoff And Fairness Judge"
+  short_description: "Score clue fairness, payoff, and chapter value"
+  default_prompt: "Use $mystery-payoff-and-fairness-judge to evaluate my chapter or arc for clue fairness, strategic intelligence, escalation, and earned payoff."

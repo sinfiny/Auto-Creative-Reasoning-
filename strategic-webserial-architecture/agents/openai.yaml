@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strategic Webserial Architecture"
+  short_description: "Plan long-arc mystery ladders and reveal timing"
+  default_prompt: "Use $strategic-webserial-architecture to outline or repair my long-arc mystery webserial with clearer clue ladders, hidden-history reveals, and stronger payoffs."
