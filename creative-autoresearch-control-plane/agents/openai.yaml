@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creative Autoresearch Control Plane"
+  short_description: "Run benchmarked creative loops instead of one-shot drafting"
+  default_prompt: "Use $creative-autoresearch-control-plane to iteratively improve my webserial chapter or arc against explicit rubrics and rewrite decisions."

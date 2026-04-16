@@ -10,6 +10,7 @@ Agents working here should optimize for:
 - honest trigger descriptions
 - reusable references instead of raw cache dumps
 - minimal repo noise
+- benchmarked improvement over vague "make it better" loops
 
 ## Expected Skill Shape
 
@@ -39,6 +40,7 @@ Use `references/` for reusable notes, rubrics, contracts, and source maps. Do no
 - Prefer a narrow skill with a crisp purpose over a broad vague one.
 - Do not imitate living authors or copy proprietary settings. Use source works as craft benchmarks, not templates.
 - If a skill coordinates other skills, make the routing logic explicit.
+- For autonomous creative work, prefer explicit benchmarks, rubrics, and rewrite ladders over aesthetic intuition alone.
 
 ## Repo Hygiene
 
@@ -46,6 +48,7 @@ Use `references/` for reusable notes, rubrics, contracts, and source maps. Do no
 - Prefer committing cleaned reference notes instead of raw Firecrawl captures.
 - Keep README aligned with what is actually tracked on `main`.
 - If you add a new committed skill, update the README when the new family changes the repo's shape in a meaningful way.
+- If you add loop tooling, make sure it points to `benchmark/`, `rubrics/`, `loop/`, and `cases/` rather than hiding evaluation logic in prompts alone.
 
 ## Git Guidance
 

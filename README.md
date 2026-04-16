@@ -9,6 +9,7 @@ The current repo is strongest in:
 - prose and subtext diagnosis
 - causal worldbuilding
 - strategic mystery webserial design
+- creative-autoresearch scaffolding for benchmarked iteration
 
 ## Repository Layout
 
@@ -28,6 +29,16 @@ What each file does:
 - `SKILL.md`: the actual skill contract, trigger description, rules, and workflow
 - `agents/openai.yaml`: UI-facing metadata such as display name and default prompt
 - `references/`: only the extra material that the skill may need on demand
+
+The repo also now contains research scaffolding folders:
+
+```text
+benchmark/   # benchmark cards and evaluation protocol
+rubrics/     # scoring systems and rewrite ladders
+loop/        # iteration contracts and experiment logs
+cases/       # before/after proof templates
+memo/        # startup and research thesis docs
+```
 
 ## Tracked Skill Families
 
@@ -58,6 +69,11 @@ What each file does:
 - `mystery-payoff-and-fairness-judge`
 - `autonomous-webserial-loop`
 
+### Creative Autoresearch Layer
+
+- `creative-autoresearch-control-plane`
+- benchmark, rubric, loop, case, and memo scaffolds for evaluated iteration
+
 ## Working Rules For This Repo
 
 - Keep skills modular. Prefer a new focused skill over turning one skill into a giant umbrella.
@@ -65,6 +81,7 @@ What each file does:
 - Update `agents/openai.yaml` whenever you add a new skill.
 - Keep the trigger description honest and specific. It is what decides when the skill activates.
 - Prefer reusable reference notes over raw web captures.
+- When building autonomous writing loops, treat evaluation and rewrite selection as first-class artifacts.
 
 ## What Not To Commit
 
