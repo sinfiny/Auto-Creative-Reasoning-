@@ -1,0 +1,4 @@
+interface:
+  display_name: "Narrative Subtext Mapping"
+  short_description: "Map hidden motives into indirect prose"
+  default_prompt: "Use $narrative-subtext-mapping to plan the hidden character states and write dialogue that carries subtext."

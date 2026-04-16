@@ -44,6 +44,37 @@ Purpose: make every generation loop measurable.
 - Self-check against these criteria after drafting.
 - Rewrite before presenting if the payoff is flat or context-breaking.
 
+## Cognitive Tool Controls
+
+Use these when the story needs stronger autonomous reasoning about what to focus on.
+
+### Contextual Prose Density
+
+Purpose: tune detail to scene function.
+
+- Use depiction when the reader must identify a person, place, object, mood, status, or world texture.
+- Use explanation when the reader must track causes, mechanisms, tactics, consequences, or plot logic.
+- Use hybrid mode sparingly: stabilize recognition, then move into cause and effect.
+- Companion skill: `$narrative-contextual-prose-density`.
+
+### Subtext Mapping
+
+Purpose: make hidden character state guide visible prose.
+
+- Track each active character's current knowledge, hidden agenda, and true emotional state.
+- Do not let dialogue directly mirror the true emotional state unless the scene is an earned confession.
+- Manifest the hidden state through tactic, gesture, deflection, omission, timing, and choice.
+- Companion skill: `$narrative-subtext-mapping`.
+
+### Epistemic Targeting
+
+Purpose: prevent lore dumps and control reader belief updates.
+
+- Define one reader insight before drafting.
+- Include only evidence, lore, backstory, or entities that serve that insight or prevent a damaging misread.
+- Withhold interesting information that answers a later question too early.
+- Companion skill: `$narrative-epistemic-targeting`.
+
 ## Narrative State Model
 
 Treat a story as a live graph of:
@@ -105,3 +136,6 @@ If one answer is missing, plan before drafting. If the scene has no change, comp
 - What line, gesture, or choice proves the emotional state?
 - What reader promise does this beat create, progress, or pay off?
 - What should remain untouched?
+- What is the reader's one target insight for this passage?
+- Is this moment asking for depiction, explanation, or a controlled hybrid?
+- Which hidden character variable should shape the visible line?
