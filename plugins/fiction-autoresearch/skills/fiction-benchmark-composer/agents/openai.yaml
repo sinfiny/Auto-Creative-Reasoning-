@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fiction Benchmark Composer"
+  short_description: "Create a reusable benchmark profile from repo skill lenses"
+  default_prompt: "Use $fiction-benchmark-composer to define a custom benchmark for this story by selecting the right repository skills and scoring dimensions."

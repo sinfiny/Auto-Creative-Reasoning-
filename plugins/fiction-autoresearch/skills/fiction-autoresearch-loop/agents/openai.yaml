@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fiction Autoresearch Loop"
+  short_description: "Start or continue a benchmarked fiction-improvement loop"
+  default_prompt: "Use $fiction-autoresearch-loop to turn this fiction draft into a benchmarked loop with baseline evaluation, variants, and recorded decisions."

@@ -1,6 +1,112 @@
 # Auto Creative Reasoning Skills
 
-This repository is a working collection of modular writing and story-craft skills for Codex-style agents. Each skill is a small, focused unit with a repeatable operating loop, output contract, and optional reference material.
+This repository is a benchmark-first workspace for building AI writing systems for long-form fiction, especially web novels and webserials.
+
+The goal is not to make AI generate prose once and call it done. The goal is to give AI an actual benchmark against which it can plan, draft, judge, revise, compare alternatives, and make a story better through repeated loops.
+
+The core thesis is simple:
+
+- generation is not the product
+- evaluation is the product
+- long-form fiction should be improved through explicit benchmarks, rubrics, rewrite ladders, and logged iteration
+
+This repo is where that thesis is being turned into reusable skills, evaluation artifacts, and eventually an operable creative system.
+
+## Codex Plugin
+
+This repository includes a repo-local Codex plugin at [plugins/fiction-autoresearch](/Users/setavya/Hacks/skills/plugins/fiction-autoresearch/README.md).
+
+The plugin is built to make the intended workflow simple:
+
+- start a benchmarked loop from an existing fiction draft
+- define or revise a benchmark profile
+- record baseline, variants, deltas, and decisions in `projects/<story-slug>/`
+- reuse the repository's skill library as evaluative and generative lenses inside the loop
+
+## Primary Goal
+
+Define a crisp, reusable skill library for specific writing and revision tasks.
+
+Provide a benchmark and rubric system that makes quality judgments explicit and comparable.
+
+Route failures to the correct rewrite level: prose, scene, chapter, arc, or premise.
+
+Produce persuasive before/after evidence that the loop improves outcomes in visible ways.
+
+Turn the thesis into an operable system, not just documents, so the loop can be run, logged, and trusted repeatedly.
+
+## Inspirations
+
+This repo is being built from three main lines of inspiration.
+
+### 1. Autoresearch-style improvement loops
+
+The primary inspiration is [`karpathy/autoresearch`](https://github.com/karpathy/autoresearch).
+
+The key transfer is from model improvement to story improvement:
+
+- define a benchmark
+- evaluate against it explicitly
+- choose the right intervention
+- compare versions
+- keep the loop running until the work clears a quality bar
+
+This repo treats fiction improvement as an evaluated loop, not a one-shot prompt.
+
+### 2. Treating writing like code and knowledge work
+
+The second major inspiration is [`forrestchang/andrej-karpathy-skills`](https://github.com/forrestchang/andrej-karpathy-skills).
+
+The relevant idea is that AI can handle long-form writing more effectively when the work is structured like engineering or research:
+
+- files and directories for reusable assets
+- explicit frameworks and dependencies
+- plans, timelines, event order, and character logic
+- modular skills instead of giant umbrella prompts
+
+This repo applies that mindset to web novel writing and story architecture.
+
+### 3. Creative-writing craft sources
+
+The third inspiration is craft material from writing lectures, podcasts, and channels, including Brandon Sanderson lectures and related creative-writing discussions.
+
+These influences are used mainly for:
+
+- editing already written content
+- moving a story in a different direction when a draft stalls
+- deconstructing and reconstructing ideas
+- creating structured interventions when the benchmark is not met
+- supporting manual author-triggered revision moves
+
+These are craft lenses, not templates to imitate.
+
+## Future Vision
+
+The long-term vision is autonomous long-form fiction work that is only practical because AI can explore many paths instead of committing early to one draft.
+
+That future includes:
+
+- multiple possible timelines of a novel being explored in parallel
+- alternate orders of events, reveals, and consequences being compared
+- competing versions of character interactions being tested for intensity and payoff
+- multiple versions of a story existing at once and being judged against explicit criteria
+- AI planning, drafting, judging, revising, and logging work autonomously across long horizons
+
+The aim is not "AI novelist" in the shallow sense.
+
+The aim is a creative optimization system for fiction that can discover the most interesting interactions, the most thrilling narrative path, and the strongest version of a story through evaluated iteration.
+
+## Features This Repo Is Building Toward
+
+- modular writing and revision skills with explicit trigger conditions
+- benchmark cards for story tasks such as openings, reveals, confrontations, and arc scaffolds
+- rubrics that score hook strength, strategy, clue fairness, consequence density, and readability
+- rewrite ladders that route failure to the right level instead of blindly polishing prose
+- before/after case evidence that makes improvement legible
+- loop contracts and experiment logs for repeatable autonomous runs
+- eventually, systems for handling branching timelines, competing chapter versions, and structured story-state management
+
+## Current Strengths
 
 The current repo is strongest in:
 
@@ -75,24 +181,18 @@ site/        # Astro + shadcn website for the novel loop board
 - `creative-autoresearch-control-plane`
 - benchmark, rubric, loop, case, and memo scaffolds for evaluated iteration
 
-## Implemented Features
+## Why This Exists
 
-- Modular writing and story-craft skills with explicit `SKILL.md` contracts
-- UI-facing skill metadata through `agents/openai.yaml`
-- Reusable `references/` notes for higher-context skills
-- Narrative control loops for planning, drafting, editing, and hook/hold/payoff checks
-- Prose diagnosis tools for clarity, cadence, subtext, density, and reader targeting
-- Strategic worldbuilding and mystery-webserial architecture skills
-- Creative-autoresearch scaffolding through `benchmark/`, `rubrics/`, `loop/`, `cases/`, and `memo/`
-- Orchestration skills that route across narrower component skills instead of relying on one giant prompt
+Most AI writing systems stop at plausible output. They produce smoother prose, but they do not reliably know whether a chapter became more compelling, more strategic, more addictive, or more structurally sound.
 
-## Yet To Implement
+This repository exists to build the missing layer:
 
-- More filled-in benchmark cards and public before/after cases so the evaluation layer has stronger proof artifacts
-- Cleaner integration of local research and trend-analysis work into reusable references instead of loose working reports
-- A more finished bot-to-benchmark workflow that connects discovery, normalization, commentary, and policy-gated extraction
-- Additional repo-level documentation for how the skill families fit together as one system for new contributors
-- Further cleanup and triage of local-only experimental material before it is promoted into committed skill families
+- explicit evaluation
+- controlled revision
+- benchmarked comparison
+- reusable writing intelligence
+
+In short, this repo exists to help AI not just write stories, but improve them.
 
 ## Working Rules For This Repo
 
