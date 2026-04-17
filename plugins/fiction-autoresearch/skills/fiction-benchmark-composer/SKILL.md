@@ -20,9 +20,10 @@ This skill makes it trivial to create a custom benchmark by selecting a small se
 
 Read:
 
-- `benchmark/starter-benchmark-set.md`
-- `rubrics/leaderboard-webserial-rubric.md`
-- `rubrics/rewrite-decision-ladder.md`
+- `benchmarks/cards/starter-benchmark-set.md`
+- `benchmarks/rubrics/leaderboard-webserial-rubric.md`
+- `benchmarks/rubrics/rewrite-decision-ladder.md`
+- `catalog/skills.yaml`
 - `../fiction-autoresearch-loop/references/skill-lens-map.md`
 
 Write or update:

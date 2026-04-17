@@ -1,0 +1,13 @@
+name: interaction-heavy
+controller: fiction-autoresearch-loop
+control_skill: creative-autoresearch-control-plane
+default_core:
+  - narrative-hook-hold-payoff
+  - narrative-explicit-reasoning
+default_conditional:
+  - narrative-auto-reasoning
+  - narrative-minimum-viable-prose
+candidate_additions:
+  - narrative-subtext-mapping
+  - narrative-contextual-prose-density
+stop_rule: Promote the subtext lens only if it improves interaction quality without harming clarity.

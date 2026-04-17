@@ -7,7 +7,7 @@ Use this protocol for benchmarked runs.
 1. Define the target unit.
 2. Define the objective of the run.
 3. Select one benchmark card.
-4. Select rubric sections from `rubrics/leaderboard-webserial-rubric.md`.
+4. Select rubric sections from `benchmarks/rubrics/leaderboard-webserial-rubric.md`.
 5. Generate or revise.
 6. Score from 1-5 per category.
 7. Record the highest-level failure.

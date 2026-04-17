@@ -1,0 +1,21 @@
+name: default-webserial
+controller: fiction-autoresearch-loop
+benchmark_surface: fiction-benchmark-composer
+control_skill: creative-autoresearch-control-plane
+default_core:
+  - mystery-payoff-and-fairness-judge
+  - narrative-hook-hold-payoff
+  - narrative-epistemic-targeting
+  - narrative-explicit-reasoning
+default_conditional:
+  - narrative-auto-reasoning
+  - narrative-minimum-viable-prose
+  - narrative-surgical-editing
+  - strategic-webserial-architecture
+  - strategic-cast-intelligence-engine
+  - faction-power-consequence-engine
+candidates:
+  - narrative-contextual-prose-density
+  - narrative-subtext-mapping
+  - grainbound-causal-worldbuilding
+stop_rule: Keep only variants that improve the intended benchmark target.

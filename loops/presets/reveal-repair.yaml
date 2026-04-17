@@ -1,0 +1,15 @@
+name: reveal-repair
+controller: fiction-autoresearch-loop
+control_skill: creative-autoresearch-control-plane
+default_core:
+  - mystery-payoff-and-fairness-judge
+  - narrative-epistemic-targeting
+  - strategic-webserial-architecture
+default_conditional:
+  - narrative-explicit-reasoning
+  - narrative-auto-reasoning
+  - narrative-hook-hold-payoff
+  - faction-power-consequence-engine
+candidate_additions:
+  - narrative-contextual-prose-density
+stop_rule: Keep the variant only if fairness, meaning shift, and consequence all improve.

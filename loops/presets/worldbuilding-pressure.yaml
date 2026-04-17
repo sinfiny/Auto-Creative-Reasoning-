@@ -1,0 +1,12 @@
+name: worldbuilding-pressure
+controller: fiction-autoresearch-loop
+control_skill: creative-autoresearch-control-plane
+default_core:
+  - strategic-webserial-architecture
+  - faction-power-consequence-engine
+default_conditional:
+  - narrative-explicit-reasoning
+  - narrative-epistemic-targeting
+candidate_additions:
+  - grainbound-causal-worldbuilding
+stop_rule: Keep the added worldbuilding only if it creates clearer pressure, cost, or strategy.

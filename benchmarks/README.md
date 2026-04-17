@@ -1,4 +1,4 @@
-# Benchmark
+# Benchmarks
 
 This folder defines the benchmark surface for autonomous creative writing work.
 
@@ -16,11 +16,11 @@ The benchmark is not a leaderboard of copyrighted novels. It is a suite of task 
 For every autonomous writing run:
 
 1. pick a benchmark class
-2. pick the relevant rubric sections from `rubrics/`
+2. pick the relevant rubric sections from `benchmarks/rubrics/`
 3. generate or revise the target unit
 4. score it
 5. decide the highest-level repair
-6. log the result in `loop/`
+6. log the result in the active story workspace under `projects/<story-slug>/loops/`
 
 ## Rules
 

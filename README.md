@@ -119,67 +119,74 @@ The current repo is strongest in:
 
 ## Repository Layout
 
-Each tracked skill follows the same basic structure:
+The repo is now organized around four separate concerns:
+
+- **plugin surface**: what Codex users interact with first
+- **skill library**: reusable writing, judging, and revision skills
+- **loop system**: presets, contracts, candidates, and project run records
+- **evidence layer**: cases and validation notes that show whether a skill deserves a place in the loop
+
+Core folders:
 
 ```text
-skill-name/
-  SKILL.md
-  agents/
-    openai.yaml
-  references/
-    ...
+plugins/      # Codex plugin entrypoint and plugin-only skills
+skills/       # reusable library skills grouped by family
+benchmarks/   # cards, protocols, and rubrics
+loops/        # contracts, presets, and candidate loop additions
+evaluations/  # before/after cases and skill-evidence notes
+projects/     # actual fiction projects and recorded loop history
+catalog/      # source-of-truth registry for skill/plugin/loop status
+docs/         # architecture, roadmap, and thesis material
+site/         # companion interface for the loop board
 ```
 
-What each file does:
+Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to answer:
 
-- `SKILL.md`: the actual skill contract, trigger description, rules, and workflow
-- `agents/openai.yaml`: UI-facing metadata such as display name and default prompt
-- `references/`: only the extra material that the skill may need on demand
-
-The repo also now contains research scaffolding folders:
-
-```text
-benchmark/   # benchmark cards and evaluation protocol
-rubrics/     # scoring systems and rewrite ladders
-loop/        # iteration contracts and experiment logs
-cases/       # before/after proof templates
-memo/        # startup and research thesis docs
-site/        # Astro + shadcn website for the novel loop board
-```
+- is this skill part of the plugin?
+- is it in the default loop?
+- is it still a candidate?
+- has it been validated yet?
 
 ## Tracked Skill Families
 
-### Narrative Control Loops
+### `skills/control/`
 
+- `creative-autoresearch-control-plane`
+- `autonomous-webserial-loop`
+
+### `skills/narrative/`
+
+- `narrative-auto-reasoning`
 - `narrative-explicit-reasoning`
 - `narrative-minimum-viable-prose`
 - `narrative-surgical-editing`
 - `narrative-hook-hold-payoff`
-- `narrative-auto-reasoning`
-
-### Prose And Interpretation
-
 - `narrative-contextual-prose-density`
 - `narrative-epistemic-targeting`
-- `narrative-subtext-mapping`
-- `prose-clarity-cadence`
 
-### Worldbuilding And Structure
+### `skills/interaction/`
+
+- `narrative-subtext-mapping`
+
+### `skills/worldbuilding/`
 
 - `grainbound-causal-worldbuilding`
 
-### Strategic Mystery Webserial Suite
+### `skills/strategy/`
 
 - `strategic-webserial-architecture`
 - `strategic-cast-intelligence-engine`
 - `faction-power-consequence-engine`
 - `mystery-payoff-and-fairness-judge`
-- `autonomous-webserial-loop`
 
-### Creative Autoresearch Layer
+### `skills/editorial/`
 
-- `creative-autoresearch-control-plane`
-- benchmark, rubric, loop, case, and memo scaffolds for evaluated iteration
+- `prose-clarity-cadence`
+
+### Plugin Surface
+
+- `plugins/fiction-autoresearch/skills/fiction-autoresearch-loop`
+- `plugins/fiction-autoresearch/skills/fiction-benchmark-composer`
 
 ## Why This Exists
 
@@ -202,6 +209,7 @@ In short, this repo exists to help AI not just write stories, but improve them.
 - Keep the trigger description honest and specific. It is what decides when the skill activates.
 - Prefer reusable reference notes over raw web captures.
 - When building autonomous writing loops, treat evaluation and rewrite selection as first-class artifacts.
+- If a skill is added to or removed from the default loop, update `catalog/skills.yaml` and the relevant file in `loops/presets/`.
 
 ## What Not To Commit
 
@@ -217,7 +225,7 @@ If scraped material matters long-term, distill it into a small reference note in
 
 ## Adding A New Skill
 
-1. Create a new folder named after the skill.
+1. Create a new folder under the right family in `skills/`.
 2. Add `SKILL.md` with clear frontmatter:
 
 ```yaml
@@ -230,6 +238,7 @@ description: Use when ...
 3. Add `agents/openai.yaml`.
 4. Add `references/` only if the skill truly needs extra material.
 5. Keep examples and contracts concise enough that the skill stays cheap to load.
+6. Add or update its entry in `catalog/skills.yaml`.
 
 ## Status
 

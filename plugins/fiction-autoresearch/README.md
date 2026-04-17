@@ -9,6 +9,8 @@ It is designed for:
 - recording every loop as a reusable project artifact
 - comparing assumption-driven variants instead of revising blindly
 
+Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to see which library skills are default, conditional, preset-only, or still candidates, and [loops/presets/](/Users/setavya/Hacks/skills/loops/presets/default-webserial.yaml) to see the current shipping loop shapes.
+
 ## Included Skills
 
 - `fiction-autoresearch-loop`

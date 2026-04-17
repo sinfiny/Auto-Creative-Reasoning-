@@ -1,0 +1,127 @@
+skills:
+  - name: fiction-autoresearch-loop
+    path: plugins/fiction-autoresearch/skills/fiction-autoresearch-loop
+    family: plugin
+    role: controller
+    plugin_status: entrypoint
+    loop_status: default_core
+    validation_status: trialing
+  - name: fiction-benchmark-composer
+    path: plugins/fiction-autoresearch/skills/fiction-benchmark-composer
+    family: plugin
+    role: benchmark-surface
+    plugin_status: benchmark_surface
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: creative-autoresearch-control-plane
+    path: skills/control/creative-autoresearch-control-plane
+    family: control
+    role: controller
+    plugin_status: internal_dependency
+    loop_status: default_core
+    validation_status: trialing
+  - name: autonomous-webserial-loop
+    path: skills/control/autonomous-webserial-loop
+    family: control
+    role: preset-controller
+    plugin_status: internal_dependency
+    loop_status: preset_only
+    validation_status: trialing
+  - name: mystery-payoff-and-fairness-judge
+    path: skills/strategy/mystery-payoff-and-fairness-judge
+    family: strategy
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_core
+    validation_status: trialing
+  - name: narrative-hook-hold-payoff
+    path: skills/narrative/narrative-hook-hold-payoff
+    family: narrative
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_core
+    validation_status: trialing
+  - name: narrative-epistemic-targeting
+    path: skills/narrative/narrative-epistemic-targeting
+    family: narrative
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_core
+    validation_status: trialing
+  - name: narrative-explicit-reasoning
+    path: skills/narrative/narrative-explicit-reasoning
+    family: narrative
+    role: guardrail
+    plugin_status: internal_dependency
+    loop_status: default_core
+    validation_status: trialing
+  - name: narrative-auto-reasoning
+    path: skills/narrative/narrative-auto-reasoning
+    family: narrative
+    role: mutator-router
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: narrative-minimum-viable-prose
+    path: skills/narrative/narrative-minimum-viable-prose
+    family: narrative
+    role: mutator
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: narrative-surgical-editing
+    path: skills/narrative/narrative-surgical-editing
+    family: narrative
+    role: mutator
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: strategic-webserial-architecture
+    path: skills/strategy/strategic-webserial-architecture
+    family: strategy
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: strategic-cast-intelligence-engine
+    path: skills/strategy/strategic-cast-intelligence-engine
+    family: strategy
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: faction-power-consequence-engine
+    path: skills/strategy/faction-power-consequence-engine
+    family: strategy
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
+  - name: narrative-contextual-prose-density
+    path: skills/narrative/narrative-contextual-prose-density
+    family: narrative
+    role: candidate-lens
+    plugin_status: library_only
+    loop_status: candidate
+    validation_status: unreviewed
+  - name: narrative-subtext-mapping
+    path: skills/interaction/narrative-subtext-mapping
+    family: interaction
+    role: candidate-lens
+    plugin_status: library_only
+    loop_status: candidate
+    validation_status: unreviewed
+  - name: grainbound-causal-worldbuilding
+    path: skills/worldbuilding/grainbound-causal-worldbuilding
+    family: worldbuilding
+    role: candidate-lens
+    plugin_status: library_only
+    loop_status: candidate
+    validation_status: unreviewed
+  - name: prose-clarity-cadence
+    path: skills/editorial/prose-clarity-cadence
+    family: editorial
+    role: editorial
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed

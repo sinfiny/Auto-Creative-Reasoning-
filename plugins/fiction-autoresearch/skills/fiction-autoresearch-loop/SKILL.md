@@ -68,6 +68,8 @@ projects/<story-slug>/
 
 Read `references/run-lifecycle.md` and `references/skill-lens-map.md` before a long run.
 
+Read `catalog/skills.yaml` when deciding whether a skill is part of the default loop, preset-only, or still a candidate.
+
 ## Core Loop
 
 1. Read the current fiction unit from `source/input.md` or the active loop snapshot.

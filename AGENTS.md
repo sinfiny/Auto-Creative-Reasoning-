@@ -38,7 +38,7 @@ When adding skills, references, benchmarks, or tooling, prefer work that makes t
 Each committed skill should normally include:
 
 ```text
-skill-name/
+skills/<family>/skill-name/
   SKILL.md
   agents/
     openai.yaml
@@ -47,7 +47,7 @@ skill-name/
 Optional:
 
 ```text
-skill-name/
+skills/<family>/skill-name/
   references/
     ...
 ```
@@ -71,7 +71,7 @@ Use `references/` for reusable notes, rubrics, contracts, and source maps. Do no
 - Prefer committing cleaned reference notes instead of raw Firecrawl captures.
 - Keep README aligned with what is actually tracked on `main`.
 - If you add a new committed skill, update the README when the new family changes the repo's shape in a meaningful way.
-- If you add loop tooling, make sure it points to `benchmark/`, `rubrics/`, `loop/`, and `cases/` rather than hiding evaluation logic in prompts alone.
+- If you add loop tooling, make sure it points to `benchmarks/`, `loops/`, and `evaluations/` rather than hiding evaluation logic in prompts alone.
 
 ## Git Guidance
 
@@ -86,3 +86,4 @@ Use `references/` for reusable notes, rubrics, contracts, and source maps. Do no
 - `AGENTS.md` should stay operational and brief.
 - Use examples when they reduce ambiguity, not just to add volume.
 - README should make the benchmark-first goal, the inspirations, and the future-facing product vision obvious within the first screen or two.
+- Treat `catalog/skills.yaml` as the source of truth for whether a skill is part of the plugin surface, part of the default loop, or still being evaluated.

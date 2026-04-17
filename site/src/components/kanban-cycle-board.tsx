@@ -127,12 +127,12 @@ const DEFAULT_BOARD: BoardState = {
       cycle: 1,
       focus: "Compare the opening promise against the strongest benchmark chapter in the repo.",
       owner: "Setavya",
-      benchmarkSet: "benchmark/opening-hook-v2",
+      benchmarkSet: "benchmarks/cards/opening-hook-v2",
       experimentId: "BR-014",
       score: 73,
       delta: 0,
       updatedAt: "3 min ago",
-      artifactPath: "cases/ash-cartographer/opening-pass.md",
+      artifactPath: "projects/ash-cartographer/loops/2026-04-17-baseline/baseline/benchmark-report.md",
       nextAction: "Capture the single biggest opening gap and turn it into one clear direction.",
       sceneSeed:
         "The cartographer arrives in a city that catalogues ash as if it were scripture and realizes the map is reading him back.",
@@ -144,12 +144,12 @@ const DEFAULT_BOARD: BoardState = {
       cycle: 2,
       focus: "Re-enter benchmark after the reveal pass to test whether the ending now earns the setup.",
       owner: "Codex Agent",
-      benchmarkSet: "benchmark/reveal-payoff-matrix",
+      benchmarkSet: "benchmarks/cards/reveal-payoff-matrix",
       experimentId: "BR-011",
       score: 81,
       delta: 4,
       updatedAt: "19 min ago",
-      artifactPath: "loop/salt-archive/re-entry-notes.md",
+      artifactPath: "projects/salt-archive/loops/2026-04-17-reveal-pass/summary.md",
       nextAction: "Verify that the stronger reveal lands earlier without flattening the mystery curve.",
       sceneSeed:
         "A salt conservator opens a ledger that has been recording future disappearances before they happen.",
@@ -163,12 +163,12 @@ const DEFAULT_BOARD: BoardState = {
       cycle: 1,
       focus: "Test whether the betrayal lands harder if the warm domestic scene turns colder two beats earlier.",
       owner: "Setavya",
-      benchmarkSet: "rubrics/tension-gradient",
+      benchmarkSet: "benchmarks/rubrics/tension-gradient",
       experimentId: "HD-022",
       score: 78,
       delta: 6,
       updatedAt: "8 min ago",
-      artifactPath: "rubrics/monsoon-cipher/tension-pass.md",
+      artifactPath: "projects/monsoon-cipher/benchmarks/profiles/active-benchmark.md",
       nextAction: "Move the coded lie into beat two and preserve the emotional cost on the page.",
       sceneSeed:
         "Monsoon rain drowns the courtyard while the cipherist smiles through a conversation that has already become a trap.",
@@ -182,12 +182,12 @@ const DEFAULT_BOARD: BoardState = {
       cycle: 3,
       focus: "Rewrite the scene spine so every beat cashes the new direction instead of repeating the old one.",
       owner: "Narrative Loop",
-      benchmarkSet: "loop/chapter-spine-pass",
+      benchmarkSet: "loops/presets/default-webserial.yaml",
       experimentId: "WO-031",
       score: 84,
       delta: 9,
       updatedAt: "just now",
-      artifactPath: "cases/clockwork-orchard/chapter-06-after.md",
+      artifactPath: "projects/clockwork-orchard/loops/2026-04-17-chapter-spine/variants/v3-scene-spine/delta.md",
       nextAction: "Ship the revised beat ladder, then run a benchmark verification pass.",
       sceneSeed:
         "Under the glass canopy, each mechanical fruit opens one tooth at a time as the orchard remembers who planted it.",
@@ -201,12 +201,12 @@ const DEFAULT_BOARD: BoardState = {
       cycle: 2,
       focus: "Completed a tighter benchmark pass and is ready to feed the next loop.",
       owner: "Codex Agent",
-      benchmarkSet: "benchmark/ending-pressure",
+      benchmarkSet: "benchmarks/cards/ending-pressure",
       experimentId: "CP-019",
       score: 88,
       delta: 12,
       updatedAt: "42 min ago",
-      artifactPath: "cases/glass-tide/final-pass-summary.md",
+      artifactPath: "evaluations/cases/glass-tide/final-pass-summary.md",
       nextAction: "Re-enter benchmark to confirm the stronger ending does not weaken the chapter handoff.",
       sceneSeed:
         "The tide hardens into mirror-bright shelves while the harbor decides which memory it is willing to keep.",
@@ -216,11 +216,11 @@ const DEFAULT_BOARD: BoardState = {
 }
 
 const REPO_COLLECTIONS = [
-  { label: "benchmark", count: "12 sets", detail: "comparison stacks and target chapters" },
-  { label: "rubrics", count: "8 scores", detail: "rewrite ladders and pass criteria" },
-  { label: "loop", count: "17 logs", detail: "iteration contracts and experiment notes" },
-  { label: "cases", count: "9 proofs", detail: "before/after evidence for each pass" },
-  { label: "memo", count: "3 docs", detail: "thesis, framing, and roadmap notes" },
+  { label: "benchmarks", count: "cards + rubrics", detail: "comparison stacks, scoring rules, and target units" },
+  { label: "loops", count: "presets + contracts", detail: "default runs, candidate slots, and logging templates" },
+  { label: "projects", count: "story workspaces", detail: "source drafts, state files, and recorded loop history" },
+  { label: "evaluations", count: "cases + reviews", detail: "before/after proof and skill-value tracking" },
+  { label: "catalog", count: "1 registry", detail: "plugin, loop, and validation status per skill" },
 ]
 
 const LEFT_RAIL_ITEMS = [
@@ -271,12 +271,12 @@ function createNovel(title: string): NovelCard {
     cycle: 1,
     focus: "Fresh entry. Benchmark it before locking the next hypothesis.",
     owner: "You",
-    benchmarkSet: "benchmark/new-intake",
+    benchmarkSet: "benchmarks/cards/new-intake",
     experimentId: `BR-${suffix}`,
     score: 70,
     delta: 0,
     updatedAt: "just now",
-    artifactPath: `cases/${slug}/intake.md`,
+    artifactPath: `projects/${slug}/loops/intake/baseline/input-snapshot.md`,
     nextAction: "Capture the benchmark gap and convert it into one narrow direction.",
     sceneSeed:
       "A newly entered draft is waiting for its first serious comparison against the benchmark shelf.",
@@ -427,7 +427,7 @@ function moveToStage(novel: NovelCard, destination: Stage): NovelCard {
       score: Math.min(99, novel.score + scoreBump),
       delta: Math.min(18, novel.delta + 2),
       updatedAt: "just now",
-      benchmarkSet: "benchmark/re-entry-check",
+      benchmarkSet: "benchmarks/cards/re-entry-check",
       nextAction: "Verify that the shipped pass survives a fresh benchmark comparison.",
       statusNote: "Returned from complete. Ready for another measured pass.",
     }
@@ -1236,7 +1236,7 @@ export default function KanbanCycleBoard() {
               <PanelBlock title="Artifacts">
                 <div className="space-y-2">
                   {activeNovel ? (
-                    [activeNovel.artifactPath, activeNovel.benchmarkSet, `loop/${slugify(activeNovel.title)}/log.md`].map((item) => (
+                    [activeNovel.artifactPath, activeNovel.benchmarkSet, `projects/${slugify(activeNovel.title)}/loops/latest/summary.md`].map((item) => (
                       <div
                         key={item}
                         className="flex items-center justify-between rounded-xl border border-zinc-800 bg-[#121216] px-3 py-3"
