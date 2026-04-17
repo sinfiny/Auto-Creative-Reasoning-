@@ -23,6 +23,22 @@ The plugin is built to make the intended workflow simple:
 - record baseline, variants, deltas, and decisions in `projects/<story-slug>/`
 - reuse the repository's skill library as evaluative and generative lenses inside the loop
 
+Quick install from a fresh machine:
+
+```bash
+git clone https://github.com/sinfiny/Auto-Creative-Reasoning-.git \
+  && cd Auto-Creative-Reasoning- \
+  && python3 plugins/fiction-autoresearch/scripts/install_home_plugin.py
+```
+
+That one command chain will:
+
+- install the `fiction-autoresearch` plugin into `~/plugins/fiction-autoresearch`
+- export a flat copy of the repo skill library into `~/.agents/skills/`
+- update `~/.agents/plugins/marketplace.json`
+
+After that, open Codex and enable the local plugin. If you prefer repo-local use, you can also open this repo directly in Codex and use the marketplace entry in [.agents/plugins/marketplace.json](/Users/setavya/Hacks/skills/.agents/plugins/marketplace.json).
+
 ## Primary Goal
 
 Define a crisp, reusable skill library for specific writing and revision tasks.

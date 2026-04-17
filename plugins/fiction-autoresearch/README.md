@@ -19,6 +19,50 @@ Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to se
 - `fiction-benchmark-composer`
 - the shared `skills/` library, including judges, mutators, guardrails, and presets used by the loop
 
+## Installation
+
+### Quick Install From Scratch
+
+```bash
+git clone https://github.com/sinfiny/Auto-Creative-Reasoning-.git \
+  && cd Auto-Creative-Reasoning- \
+  && python3 plugins/fiction-autoresearch/scripts/install_home_plugin.py
+```
+
+### One-Command Home Install
+
+From the repository root, run:
+
+```bash
+python3 plugins/fiction-autoresearch/scripts/install_home_plugin.py
+```
+
+That will:
+
+- create a home-local plugin at `~/plugins/fiction-autoresearch`
+- export a flat plugin skill bundle at `~/plugins/fiction-autoresearch/skills/`
+- export the same skills into `~/.agents/skills/` for direct user-skill discovery
+- wire both installs to the shared skill library from this cloned repo
+- update `~/.agents/plugins/marketplace.json`
+
+After that, open Codex and use the local plugin from your home marketplace.
+
+If you already installed an older version of the plugin layout, rerun with `--force` to refresh the generated symlinks:
+
+```bash
+python3 plugins/fiction-autoresearch/scripts/install_home_plugin.py --force
+```
+
+### Repo-Local Use
+
+If you prefer not to install it home-locally, you can also just open this repository in Codex and use the repo-local marketplace entry in [.agents/plugins/marketplace.json](/Users/setavya/Hacks/skills/.agents/plugins/marketplace.json).
+
+### Important Note
+
+This install is still **repo-coupled**.
+
+The installer makes the setup simple, but it still expects this repository to remain cloned locally because the installed plugin reuses the shared `skills/` library from the repo.
+
 ## Core Idea
 
 This plugin translates two main inspirations into fiction work:
