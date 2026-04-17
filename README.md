@@ -38,6 +38,7 @@ rubrics/     # scoring systems and rewrite ladders
 loop/        # iteration contracts and experiment logs
 cases/       # before/after proof templates
 memo/        # startup and research thesis docs
+site/        # Astro + shadcn website for the novel loop board
 ```
 
 ## Tracked Skill Families
@@ -133,3 +134,5 @@ description: Use when ...
 ## Status
 
 This repository is an actively evolving workspace, not a polished package registry. Some local skill folders may exist outside Git while they are still being developed or cleaned up for commit.
+
+The website under `site/` is a companion interface for the repo's benchmark to hypothesis to work to complete loop. It is intentionally separate from the skill folders so the frontend can evolve without adding noise to the skill contracts themselves.
