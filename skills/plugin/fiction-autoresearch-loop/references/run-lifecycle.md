@@ -5,13 +5,15 @@ This plugin treats each fiction loop like an experiment run, not an informal edi
 ## Lifecycle
 
 1. Capture the input.
-2. Define or load the active benchmark.
-3. Benchmark the baseline draft.
-4. Name the highest-level failure.
-5. Generate variants that each test one assumption.
-6. Benchmark each variant again.
-7. Keep or discard based on the intended target.
-8. Record the decision and the next best loop.
+2. Gather relevant hypotheses.
+3. Define or load the active benchmark.
+4. Benchmark the baseline draft.
+5. Name the highest-level failure.
+6. Generate variants that each test one assumption.
+7. Record which skills were actually used by each variant.
+8. Benchmark each variant again.
+9. Keep or discard based on the intended target.
+10. Record the decision and the next best loop.
 
 ## Baseline Rule
 
@@ -35,6 +37,13 @@ Good examples:
 - the ally's deception is seeded earlier
 - the scene is rewritten at the chapter level instead of at the prose level
 - the benchmark should prioritize strategic intelligence over atmosphere
+
+Each variant should also record:
+
+- which hypothesis it came from, if any
+- recommended judges
+- recommended mutators
+- actual skills used
 
 ## Decision Rule
 

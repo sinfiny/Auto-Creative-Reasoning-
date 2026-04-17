@@ -11,6 +11,7 @@ projects/<story-slug>/
 Each project should keep:
 
 - the long-lived source input
+- a hypothesis backlog and reusable experiment ideas
 - current character, timeline, and thread state
 - reusable benchmark profiles
 - a recorded history of loops and variants
@@ -22,6 +23,7 @@ The repository's intended use is not one-off prompting.
 It is repeated improvement of the same fiction work through benchmarked loops. That only stays legible if the project structure records:
 
 - what the input was
+- what hypotheses were under consideration
 - what benchmark was used
 - what variants were tried
 - what improved
@@ -41,5 +43,6 @@ Example:
 ```bash
 python3 plugins/fiction-autoresearch/scripts/init_fiction_autoresearch_run.py ash-cartographer \
   --title "The Ash Cartographer" \
-  --loop-id 2026-04-17-baseline
+  --loop-id 2026-04-17-baseline \
+  --preset default-webserial
 ```

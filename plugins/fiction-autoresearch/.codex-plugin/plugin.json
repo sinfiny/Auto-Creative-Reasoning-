@@ -17,7 +17,7 @@
     "autoresearch",
     "writing"
   ],
-  "skills": "./skills/",
+  "skills": "../../skills/",
   "interface": {
     "displayName": "Fiction Autoresearch",
     "shortDescription": "Run benchmarked fiction-improvement loops from a single draft.",

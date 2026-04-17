@@ -14,6 +14,7 @@ Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) as th
 
 - `character/`: character-centered fiction design and transformation lenses
 - `control/`: loop controllers and high-level workflow coordinators
+- `plugin/`: plugin-entry skills that package the shared loop workflow for Codex users
 - `strategy/`: strategic webserial structure, consequence, and intelligence skills
 - `narrative/`: scene, chapter, pacing, epistemic, and prose-control skills
 - `interaction/`: dialogue and interpersonal-pressure skills

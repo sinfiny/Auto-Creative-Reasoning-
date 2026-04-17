@@ -160,6 +160,11 @@ Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to an
 - `creative-autoresearch-control-plane`
 - `autonomous-webserial-loop`
 
+### `skills/plugin/`
+
+- `fiction-autoresearch-loop`
+- `fiction-benchmark-composer`
+
 ### `skills/narrative/`
 
 - `narrative-auto-reasoning`
@@ -215,8 +220,8 @@ Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to an
 
 ### Plugin Surface
 
-- `plugins/fiction-autoresearch/skills/fiction-autoresearch-loop`
-- `plugins/fiction-autoresearch/skills/fiction-benchmark-composer`
+- `skills/plugin/fiction-autoresearch-loop`
+- `skills/plugin/fiction-benchmark-composer`
 
 ## Supporting Workspaces
 

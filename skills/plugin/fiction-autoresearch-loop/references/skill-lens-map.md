@@ -2,6 +2,8 @@
 
 Use this map when composing a benchmark or choosing which repository skills should act as evaluative lenses.
 
+For role routing across the whole loop, also read `loop-role-map.md`.
+
 ## Core Control
 
 - `creative-autoresearch-control-plane`
@@ -25,7 +27,7 @@ Use this map when composing a benchmark or choosing which repository skills shou
 - `narrative-hook-hold-payoff`
   - scores entry pressure, escalation, payoff, and changed story state
 - `narrative-explicit-reasoning`
-  - scores coherence of motive, lore, assumptions, and contradiction handling
+  - use as a guardrail for contradiction checks, assumption isolation, and rewrite-level sanity checks
 - `narrative-auto-reasoning`
   - coordinates multi-skill scene/chapter work when more than one control loop is needed
 

@@ -1,13 +1,17 @@
 name: interaction-heavy
 controller: fiction-autoresearch-loop
 control_skill: creative-autoresearch-control-plane
+minimum_variants: 3
+prose_only_allowed_when: highest-level failure is prose
 default_core:
   - narrative-hook-hold-payoff
+  - narrative-subtext-mapping
+guardrails:
   - narrative-explicit-reasoning
 default_conditional:
   - narrative-auto-reasoning
   - narrative-minimum-viable-prose
-candidate_additions:
-  - narrative-subtext-mapping
   - narrative-contextual-prose-density
+candidates:
+  - strategic-cast-intelligence-engine
 stop_rule: Promote the subtext lens only if it improves interaction quality without harming clarity.

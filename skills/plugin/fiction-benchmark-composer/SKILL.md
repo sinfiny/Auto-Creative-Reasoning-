@@ -9,6 +9,9 @@ Use this skill when the user wants to define the benchmark itself instead of onl
 
 This skill makes it trivial to create a custom benchmark by selecting a small set of repository skills as lenses and turning them into a reusable profile.
 
+The benchmark is the loop's program.
+If the benchmark is vague, the loop will drift toward shallow edits.
+
 ## When To Use
 
 - a story needs a benchmark different from the default strategic-webserial emphasis
@@ -50,10 +53,16 @@ projects/<story-slug>/benchmarks/profiles/active-benchmark.md
    - denser subtext
 3. Choose one control skill.
 4. Choose two to four scoring lenses.
-5. Define scoring dimensions and weights.
-6. Define the pass floor.
-7. Define rewrite routing priorities.
-8. Save the profile so later variants can be judged against the same target.
+5. Choose any required guardrails.
+6. Choose the mutators that are allowed to generate candidate variants.
+7. Define scoring dimensions and weights.
+8. Define the pass floor.
+9. Define rewrite routing priorities.
+10. Define the minimum number of variants to test.
+11. Save the profile so later variants can be judged against the same target.
+
+The benchmark should not be the hypothesis backlog.
+Keep hypotheses separate and let the run record which hypotheses and skills were actually used.
 
 ## Output Contract
 
@@ -62,6 +71,9 @@ Use the profile shape in `references/benchmark-profile-contract.md`.
 ## Rules
 
 - Prefer the fewest skills that fully describe the benchmark.
+- Every chosen skill should have an explicit role: controller, judge, mutator, or guardrail.
+- Use judges to score, mutators to generate, and guardrails to prevent bad diagnosis.
+- If the target unit is a chapter and the failure is structural, include at least one structural judge.
 - Do not create a benchmark that mixes contradictory success criteria without stating the tradeoff.
 - If a benchmark overfits one style preference, say so explicitly.
 - If the benchmark is meant to compare variants, keep it stable for the whole loop.

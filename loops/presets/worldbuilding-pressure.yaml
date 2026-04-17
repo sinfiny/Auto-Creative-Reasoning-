@@ -1,12 +1,16 @@
 name: worldbuilding-pressure
 controller: fiction-autoresearch-loop
 control_skill: creative-autoresearch-control-plane
+minimum_variants: 3
+prose_only_allowed_when: highest-level failure is prose
 default_core:
   - strategic-webserial-architecture
   - faction-power-consequence-engine
-default_conditional:
-  - narrative-explicit-reasoning
-  - narrative-epistemic-targeting
-candidate_additions:
   - grainbound-causal-worldbuilding
+guardrails:
+  - narrative-explicit-reasoning
+default_conditional:
+  - narrative-epistemic-targeting
+candidates:
+  - narrative-contextual-prose-density
 stop_rule: Keep the added worldbuilding only if it creates clearer pressure, cost, or strategy.

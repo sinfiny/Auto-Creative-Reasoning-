@@ -1,13 +1,13 @@
 skills:
   - name: fiction-autoresearch-loop
-    path: plugins/fiction-autoresearch/skills/fiction-autoresearch-loop
+    path: skills/plugin/fiction-autoresearch-loop
     family: plugin
     role: controller
     plugin_status: entrypoint
     loop_status: default_core
     validation_status: trialing
   - name: fiction-benchmark-composer
-    path: plugins/fiction-autoresearch/skills/fiction-benchmark-composer
+    path: skills/plugin/fiction-benchmark-composer
     family: plugin
     role: benchmark-surface
     plugin_status: benchmark_surface
@@ -81,7 +81,7 @@ skills:
     family: strategy
     role: judge
     plugin_status: internal_dependency
-    loop_status: default_conditional
+    loop_status: default_core
     validation_status: trialing
   - name: strategic-cast-intelligence-engine
     path: skills/strategy/strategic-cast-intelligence-engine
@@ -100,140 +100,140 @@ skills:
   - name: narrative-contextual-prose-density
     path: skills/narrative/narrative-contextual-prose-density
     family: narrative
-    role: candidate-lens
-    plugin_status: library_only
-    loop_status: candidate
-    validation_status: unreviewed
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: default_conditional
+    validation_status: trialing
   - name: narrative-subtext-mapping
     path: skills/interaction/narrative-subtext-mapping
     family: interaction
-    role: candidate-lens
-    plugin_status: library_only
-    loop_status: candidate
-    validation_status: unreviewed
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: preset_only
+    validation_status: trialing
   - name: grainbound-causal-worldbuilding
     path: skills/worldbuilding/grainbound-causal-worldbuilding
     family: worldbuilding
-    role: candidate-lens
-    plugin_status: library_only
-    loop_status: candidate
-    validation_status: unreviewed
+    role: judge
+    plugin_status: internal_dependency
+    loop_status: preset_only
+    validation_status: trialing
   - name: prose-clarity-cadence
     path: skills/editorial/prose-clarity-cadence
     family: editorial
     role: editorial
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: character-driven-storytelling
     path: skills/character/character-driven-storytelling
     family: character
     role: story-design
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: copywriting-mechanics
     path: skills/marketing/copywriting-mechanics
     family: marketing
     role: persuasive-writing
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: clarity-and-visuality-editor
     path: skills/nonfiction/clarity-and-visuality-editor
     family: nonfiction
     role: editorial
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: memorable-lines-and-rhetoric
     path: skills/nonfiction/memorable-lines-and-rhetoric
     family: nonfiction
     role: line-level-rhetoric
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: nonfiction-structure-architect
     path: skills/nonfiction/nonfiction-structure-architect
     family: nonfiction
     role: structure
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: online-writing-idea-finder
     path: skills/nonfiction/online-writing-idea-finder
     family: nonfiction
     role: ideation
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: research-interview-synthesis
     path: skills/nonfiction/research-interview-synthesis
     family: nonfiction
     role: reporting
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: youtube-visual-scriptwriter
     path: skills/nonfiction/youtube-visual-scriptwriter
     family: nonfiction
     role: audiovisual-structure
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-character-engine
     path: skills/sanderson/sanderson-character-engine
     family: sanderson
-    role: character-design
-    plugin_status: library_only
+    role: mutator
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-endings-and-revision
     path: skills/sanderson/sanderson-endings-and-revision
     family: sanderson
-    role: revision
-    plugin_status: library_only
+    role: mutator
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-full-methodology
     path: skills/sanderson/sanderson-full-methodology
     family: sanderson
     role: orchestrator
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-professional-writing
     path: skills/sanderson/sanderson-professional-writing
     family: sanderson
     role: process
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-promise-progress-payoff
     path: skills/sanderson/sanderson-promise-progress-payoff
     family: sanderson
-    role: plot-diagnosis
-    plugin_status: library_only
+    role: mutator
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-publishing-strategy
     path: skills/sanderson/sanderson-publishing-strategy
     family: sanderson
     role: publishing-strategy
-    plugin_status: library_only
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-speculative-design
     path: skills/sanderson/sanderson-speculative-design
     family: sanderson
-    role: speculative-design
-    plugin_status: library_only
+    role: mutator
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
   - name: sanderson-story-architecture
     path: skills/sanderson/sanderson-story-architecture
     family: sanderson
-    role: story-architecture
-    plugin_status: library_only
+    role: mutator
+    plugin_status: bundled_optional
     loop_status: off_loop
     validation_status: unreviewed
