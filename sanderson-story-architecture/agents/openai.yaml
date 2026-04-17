@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Story Architecture"
+  short_description: "Design structure, escalation, and section jobs"
+  default_prompt: "Use $sanderson-story-architecture to fix my story structure, escalation, act design, or try-fail cycles."

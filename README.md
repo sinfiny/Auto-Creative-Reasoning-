@@ -74,6 +74,25 @@ memo/        # startup and research thesis docs
 - `creative-autoresearch-control-plane`
 - benchmark, rubric, loop, case, and memo scaffolds for evaluated iteration
 
+## Implemented Features
+
+- Modular writing and story-craft skills with explicit `SKILL.md` contracts
+- UI-facing skill metadata through `agents/openai.yaml`
+- Reusable `references/` notes for higher-context skills
+- Narrative control loops for planning, drafting, editing, and hook/hold/payoff checks
+- Prose diagnosis tools for clarity, cadence, subtext, density, and reader targeting
+- Strategic worldbuilding and mystery-webserial architecture skills
+- Creative-autoresearch scaffolding through `benchmark/`, `rubrics/`, `loop/`, `cases/`, and `memo/`
+- Orchestration skills that route across narrower component skills instead of relying on one giant prompt
+
+## Yet To Implement
+
+- More filled-in benchmark cards and public before/after cases so the evaluation layer has stronger proof artifacts
+- Cleaner integration of local research and trend-analysis work into reusable references instead of loose working reports
+- A more finished bot-to-benchmark workflow that connects discovery, normalization, commentary, and policy-gated extraction
+- Additional repo-level documentation for how the skill families fit together as one system for new contributors
+- Further cleanup and triage of local-only experimental material before it is promoted into committed skill families
+
 ## Working Rules For This Repo
 
 - Keep skills modular. Prefer a new focused skill over turning one skill into a giant umbrella.

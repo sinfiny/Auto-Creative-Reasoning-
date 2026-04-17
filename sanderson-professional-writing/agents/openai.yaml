@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Professional Writing"
+  short_description: "Calibrate process, finishing, and revision habits"
+  default_prompt: "Use $sanderson-professional-writing to diagnose my writing process, finishing problem, or outlining-vs-discovery workflow."

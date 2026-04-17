@@ -1,0 +1,4 @@
+interface:
+  display_name: "Copywriting Mechanics"
+  short_description: "Sharpen commercial copy with specific claims"
+  default_prompt: "Use $copywriting-mechanics to rewrite this headline, offer, landing page, or CTA so it is more specific, visual, and persuasive."

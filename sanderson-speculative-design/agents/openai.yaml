@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Speculative Design"
+  short_description: "Build magic systems and worldbuilding in service of story"
+  default_prompt: "Use $sanderson-speculative-design to design or diagnose my magic system, worldbuilding, or speculative setting."

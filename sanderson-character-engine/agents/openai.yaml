@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sanderson Character Engine"
+  short_description: "Tune reader investment and character arcs"
+  default_prompt: "Use $sanderson-character-engine to design or diagnose my protagonist, supporting cast, or character arc."

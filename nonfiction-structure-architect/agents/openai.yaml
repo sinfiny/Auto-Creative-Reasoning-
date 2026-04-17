@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nonfiction Structure Architect"
+  short_description: "Turn fuzzy topics into strong outlines"
+  default_prompt: "Use $nonfiction-structure-architect to shape this essay, article, chapter, or proposal into a stronger question, sequence, and outline."
