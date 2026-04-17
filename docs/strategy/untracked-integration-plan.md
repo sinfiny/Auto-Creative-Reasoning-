@@ -40,10 +40,10 @@ Use this bucket for:
 
 ## Recommended Near-Term Integration Order
 
-1. `fanfiction-platform-data/`
-2. `sanderson-*` skill families that are already structured
-3. `research-interview-synthesis/`
-4. `online-writing-idea-finder/`
+1. `docs/research/fanfiction-platform-data/`
+2. `skills/sanderson/`
+3. `skills/nonfiction/research-interview-synthesis/`
+4. `skills/nonfiction/online-writing-idea-finder/`
 5. any platform trend reports that directly support the benchmark thesis
 
 ## Integration Rule

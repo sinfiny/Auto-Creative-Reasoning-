@@ -125,3 +125,115 @@ skills:
     plugin_status: library_only
     loop_status: off_loop
     validation_status: unreviewed
+  - name: character-driven-storytelling
+    path: skills/character/character-driven-storytelling
+    family: character
+    role: story-design
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: copywriting-mechanics
+    path: skills/marketing/copywriting-mechanics
+    family: marketing
+    role: persuasive-writing
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: clarity-and-visuality-editor
+    path: skills/nonfiction/clarity-and-visuality-editor
+    family: nonfiction
+    role: editorial
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: memorable-lines-and-rhetoric
+    path: skills/nonfiction/memorable-lines-and-rhetoric
+    family: nonfiction
+    role: line-level-rhetoric
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: nonfiction-structure-architect
+    path: skills/nonfiction/nonfiction-structure-architect
+    family: nonfiction
+    role: structure
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: online-writing-idea-finder
+    path: skills/nonfiction/online-writing-idea-finder
+    family: nonfiction
+    role: ideation
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: research-interview-synthesis
+    path: skills/nonfiction/research-interview-synthesis
+    family: nonfiction
+    role: reporting
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: youtube-visual-scriptwriter
+    path: skills/nonfiction/youtube-visual-scriptwriter
+    family: nonfiction
+    role: audiovisual-structure
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-character-engine
+    path: skills/sanderson/sanderson-character-engine
+    family: sanderson
+    role: character-design
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-endings-and-revision
+    path: skills/sanderson/sanderson-endings-and-revision
+    family: sanderson
+    role: revision
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-full-methodology
+    path: skills/sanderson/sanderson-full-methodology
+    family: sanderson
+    role: orchestrator
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-professional-writing
+    path: skills/sanderson/sanderson-professional-writing
+    family: sanderson
+    role: process
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-promise-progress-payoff
+    path: skills/sanderson/sanderson-promise-progress-payoff
+    family: sanderson
+    role: plot-diagnosis
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-publishing-strategy
+    path: skills/sanderson/sanderson-publishing-strategy
+    family: sanderson
+    role: publishing-strategy
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-speculative-design
+    path: skills/sanderson/sanderson-speculative-design
+    family: sanderson
+    role: speculative-design
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed
+  - name: sanderson-story-architecture
+    path: skills/sanderson/sanderson-story-architecture
+    family: sanderson
+    role: story-architecture
+    plugin_status: library_only
+    loop_status: off_loop
+    validation_status: unreviewed

@@ -8,6 +8,9 @@ bots/.tmp/
 
 # Node dependencies for local tooling
 bots/node_modules/
+marketing-site/node_modules/
+marketing-site/dist/
+site/node_modules/
 
 # Downloaded media and large local source artifacts
 sanderson-2025-playlist/videos/

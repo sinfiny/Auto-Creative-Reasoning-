@@ -136,7 +136,9 @@ loops/        # contracts, presets, and candidate loop additions
 evaluations/  # before/after cases and skill-evidence notes
 projects/     # actual fiction projects and recorded loop history
 catalog/      # source-of-truth registry for skill/plugin/loop status
-docs/         # architecture, roadmap, and thesis material
+docs/         # architecture, roadmap, thesis, and research material
+bots/         # trend/discovery tooling and ingestion scaffolds
+marketing-site/ # separate Vite app for outward-facing product marketing
 site/         # companion interface for the loop board
 ```
 
@@ -148,6 +150,10 @@ Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to an
 - has it been validated yet?
 
 ## Tracked Skill Families
+
+### `skills/character/`
+
+- `character-driven-storytelling`
 
 ### `skills/control/`
 
@@ -183,10 +189,40 @@ Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) to an
 
 - `prose-clarity-cadence`
 
+### `skills/marketing/`
+
+- `copywriting-mechanics`
+
+### `skills/nonfiction/`
+
+- `clarity-and-visuality-editor`
+- `memorable-lines-and-rhetoric`
+- `nonfiction-structure-architect`
+- `online-writing-idea-finder`
+- `research-interview-synthesis`
+- `youtube-visual-scriptwriter`
+
+### `skills/sanderson/`
+
+- `sanderson-character-engine`
+- `sanderson-endings-and-revision`
+- `sanderson-full-methodology`
+- `sanderson-professional-writing`
+- `sanderson-promise-progress-payoff`
+- `sanderson-publishing-strategy`
+- `sanderson-speculative-design`
+- `sanderson-story-architecture`
+
 ### Plugin Surface
 
 - `plugins/fiction-autoresearch/skills/fiction-autoresearch-loop`
 - `plugins/fiction-autoresearch/skills/fiction-benchmark-composer`
+
+## Supporting Workspaces
+
+- `docs/research/` stores source-proof notes, trend reports, and incubation material that may later become skills or product decisions.
+- `bots/` holds tooling for discovery, crawling, normalization, and originalization experiments.
+- `marketing-site/` is a standalone marketing app and is intentionally separate from the skill/plugin system.
 
 ## Why This Exists
 
