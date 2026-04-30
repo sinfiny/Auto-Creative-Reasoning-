@@ -7,6 +7,7 @@ defmodule AutoWriter.MixProject do
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
+      test_paths: ["lab/test"],
       deps: []
     ]
   end

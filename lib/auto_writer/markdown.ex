@@ -32,45 +32,6 @@ defmodule AutoWriter.Markdown do
     end)
   end
 
-  def frontmatter(map) do
-    lines =
-      map
-      |> Enum.reject(fn {_key, value} -> is_nil(value) or value == "" end)
-      |> Enum.map(fn {key, value} -> "#{key}: #{value}" end)
-      |> Enum.join("\n")
-
-    "---\n#{lines}\n---\n\n"
-  end
-
-  def section(body, title) do
-    marker = "## #{title}"
-
-    body
-    |> String.split(marker, parts: 2)
-    |> case do
-      [_] ->
-        ""
-
-      [_, rest] ->
-        rest
-        |> String.split("\n## ", parts: 2)
-        |> List.first()
-        |> String.trim()
-    end
-  end
-
-  def first_heading_name(path) do
-    {_meta, body} = read(path)
-
-    body
-    |> String.split("\n")
-    |> Enum.find_value(Path.basename(path, ".md"), fn line ->
-      if String.starts_with?(line, "# ") do
-        line |> String.trim_leading("# ") |> String.trim()
-      end
-    end)
-  end
-
   defp clean(value) do
     value
     |> String.trim()

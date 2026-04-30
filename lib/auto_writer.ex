@@ -1,12 +1,13 @@
 defmodule AutoWriter do
   @moduledoc """
-  Small public interface for the AutoWriter skill harness.
+  Public interface for AutoWriter Core.
+
+  AutoWriter Core is intentionally small: it loads a declarative workflow and
+  leaves agent dispatch and event storage as explicit design spaces.
   """
 
-  alias AutoWriter.{Paragraph, ReviewPage, Run, SkillLibrary}
+  alias AutoWriter.{Loop, Workflow}
 
-  defdelegate skills(root \\ "skills"), to: SkillLibrary, as: :list
-  defdelegate init_run(slug, opts \\ []), to: Run, as: :init
-  defdelegate ingest(run_root, source_path), to: Paragraph
-  defdelegate render_review(run_root, opts \\ []), to: ReviewPage, as: :render
+  defdelegate load_workflow(path), to: Workflow, as: :load
+  defdelegate run(path), to: Loop
 end
