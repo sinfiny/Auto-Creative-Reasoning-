@@ -52,8 +52,8 @@ The evaluator is the product. Generation is only one component.
    - better clue fairness
    - more strategic character play
    - stronger leaderboard fit
-3. Select the benchmark case type in `benchmarks/`.
-4. Select the rubric sections in `benchmarks/rubrics/`.
+3. Select or compose the benchmark in `runs/<story-slug>/benchmark.md`.
+4. Select the skill lenses that will judge, guard, and mutate the run.
 5. Produce or revise the unit under test.
 6. Judge it with the local and chapter-level rubrics.
 7. Decide the highest-level failure:
@@ -63,7 +63,7 @@ The evaluator is the product. Generation is only one component.
    - arc
    - premise
 8. Apply only the necessary rewrite level.
-9. Log the iteration using `loops/contracts/experiment-log-template.md`.
+9. Log the iteration under `runs/<story-slug>/loops/<loop-id>/`.
 10. Stop when the unit clears the bar or when more iteration would require new author intent.
 
 ## Output Contract

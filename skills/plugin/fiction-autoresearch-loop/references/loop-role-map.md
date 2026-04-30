@@ -85,4 +85,4 @@ The loop should normally proceed in this order:
 5. judges rescore each candidate
 6. controller keeps, discards, or escalates
 
-If a skill's role is unclear, check `catalog/skills.yaml`.
+If a skill's role is unclear, infer it from the skill name, family, description, and output contract before using it.

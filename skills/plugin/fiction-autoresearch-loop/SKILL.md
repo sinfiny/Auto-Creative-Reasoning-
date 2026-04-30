@@ -35,7 +35,7 @@ The implication for this plugin is strict:
 If the story does not already have a project workspace, initialize it with:
 
 ```bash
-python3 plugins/fiction-autoresearch/scripts/init_fiction_autoresearch_run.py <story-slug> --title "<story title>" --loop-id <loop-id>
+mix aw.init <story-slug> --title "<story title>" --loop <loop-id>
 ```
 
 Use a loop id like `2026-04-17-baseline`, `2026-04-17-reveal-pass`, or `2026-04-17-arc-repair`.
@@ -45,30 +45,23 @@ Use a loop id like `2026-04-17-baseline`, `2026-04-17-reveal-pass`, or `2026-04-
 Keep all loop work under:
 
 ```text
-projects/<story-slug>/
+runs/<story-slug>/
   README.md
   source/
     input.md
   hypotheses/
-    README.md
     backlog.md
-    templates/
-      hypothesis-template.md
   state/
     characters.md
     timeline.md
     threads.md
-  benchmarks/
-    README.md
-    profiles/
-      active-benchmark.md
+  benchmark.md
   loops/
     <loop-id>/
-      README.md
+      plan.md
       baseline/
         input-snapshot.md
         benchmark-report.md
-      plan.md
       variants/
         <variant-id>/
           assumption.md
@@ -82,15 +75,13 @@ projects/<story-slug>/
 Read `references/run-lifecycle.md` and `references/skill-lens-map.md` before a long run.
 Read `references/loop-role-map.md` before deciding which skills should judge, mutate, or guard the run.
 
-Read `catalog/skills.yaml` when deciding whether a skill is part of the default loop, preset-only, or still a candidate.
-
 ## Core Loop
 
 1. Read the current fiction unit from `source/input.md` or the active loop snapshot.
 2. Read any relevant hypotheses from `hypotheses/`.
-3. Read `benchmarks/profiles/active-benchmark.md`.
+3. Read `benchmark.md`.
 4. If the benchmark file is missing, blank, or missing its target unit, scoring lenses, pass floor, or rewrite routing priority, stop and run `$fiction-benchmark-composer` first.
-5. Read the preset guidance in `loops/presets/` when the benchmark references a preset.
+5. Use the skill library as the source of available lenses.
 6. Produce a baseline benchmark report in `loops/<loop-id>/baseline/benchmark-report.md`.
 7. Identify the highest-level failure:
    - prose

@@ -26,10 +26,9 @@ This suite is based on Brandon Sanderson's 2025 writing lecture playlist.
 ## Playlist
 
 - Playlist URL: `https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY`
-- Local video target directory: `/Users/setavya/Hacks/skills/sanderson-2025-playlist/videos/`
 
 ## Notes
 
-- Use the study docs in `sanderson-writing-system/` for lecture-by-lecture summaries.
+- Use the component skill references for lecture-derived notes.
 - Use the component skills for focused help.
 - Use `$sanderson-full-methodology` for full-stack routing.

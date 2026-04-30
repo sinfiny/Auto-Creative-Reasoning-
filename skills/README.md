@@ -2,13 +2,12 @@
 
 This folder contains the reusable skill library for the repository.
 
-These are not all automatically part of the plugin surface and they are not all part of the default autoresearch loop.
+The skills are the declarative center of AutoWriter. Elixir code should stay
+small and use this folder as its source of truth.
 
-Use [catalog/skills.yaml](/Users/setavya/Hacks/skills/catalog/skills.yaml) as the source of truth for:
-
-- plugin status
-- loop adoption status
-- validation status
+Each skill should define a narrow writing, judging, revision, or orchestration
+behavior. Large supporting material belongs in that skill's `references/`
+folder.
 
 ## Families
 

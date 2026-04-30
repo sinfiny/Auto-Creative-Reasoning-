@@ -23,16 +23,13 @@ If the benchmark is vague, the loop will drift toward shallow edits.
 
 Read:
 
-- `benchmarks/cards/starter-benchmark-set.md`
-- `benchmarks/rubrics/leaderboard-webserial-rubric.md`
-- `benchmarks/rubrics/rewrite-decision-ladder.md`
-- `catalog/skills.yaml`
+- `skills/`
 - `../fiction-autoresearch-loop/references/skill-lens-map.md`
 
 Write or update:
 
 ```text
-projects/<story-slug>/benchmarks/profiles/active-benchmark.md
+runs/<story-slug>/benchmark.md
 ```
 
 ## Composition Workflow
@@ -67,6 +64,22 @@ Keep hypotheses separate and let the run record which hypotheses and skills were
 ## Output Contract
 
 Use the profile shape in `references/benchmark-profile-contract.md`.
+
+At minimum, the benchmark should define:
+
+```text
+Target unit:
+Objective:
+Controller:
+Judges:
+Guardrails:
+Allowed mutators:
+Scoring dimensions:
+Pass floor:
+Rewrite routing priority:
+Minimum variants:
+Stop rule:
+```
 
 ## Rules
 

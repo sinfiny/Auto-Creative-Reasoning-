@@ -17,8 +17,8 @@ These skills create and reshape story material:
 These judge whether the output is actually good enough:
 
 - `mystery-payoff-and-fairness-judge`
-- rubric files in `benchmarks/rubrics/`
-- benchmark cases in `benchmarks/cards/`
+- benchmark profiles in `runs/<story-slug>/benchmark.md`
+- selected judge skills from `skills/`
 
 ## 3. Control Layer
 

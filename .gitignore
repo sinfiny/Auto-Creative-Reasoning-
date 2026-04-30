@@ -1,21 +1,5 @@
-# macOS
-.DS_Store
-
-# Local scrape caches and one-off research captures
-.firecrawl/
-bots/.firecrawl/
-bots/.tmp/
-
-# Node dependencies for local tooling
-bots/node_modules/
-marketing-site/node_modules/
-marketing-site/dist/
-site/node_modules/
-
-# Downloaded media and large local source artifacts
-sanderson-2025-playlist/videos/
-
-# Common local env and log noise
-.env
-.env.*
-*.log
+/_build/
+/deps/
+/.elixir_ls/
+/runs/
+*.ez
